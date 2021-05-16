@@ -21,33 +21,35 @@
   <body>
     <header class="header">
       <!-- Блок основної навігації по сайту -->
-      <div class="container">
-        <nav class="navi-main">
+      <div class="container header__container">
+        <nav class="header__nav">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logo-second">Web</span>Studio</a
+            ><span class="logo--second-color">Web</span>Studio</a
           >
-          <ul class="list navi">
-            <li class="navi-item">
-              <a class="link" href="./index.html">Студия</a>
+          <ul class="list main-menu">
+            <li class="main-menu__item">
+              <a class="link current-page" href="./index.html">Студия</a>
             </li>
-            <li class="navi-item">
-              <a class="link current-page" href="./portfolio.html">Портфолио</a>
+            <li class="main-menu__item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navi-item"><a class="link" href="">Контакты</a></li>
+            <li class="main-menu__item">
+              <a class="link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <!-- Контактна інофрмація -->
-        <ul class="list contact-info navi">
-          <li class="navi-item">
-            <a class="link contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16px" height="16px">
+        <ul class="list contacts main-menu">
+          <li class="main-menu__item">
+            <a class="link contacts__item" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="16px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="navi-item">
+          <li class="main-menu__item">
             <a class="link contact-link" href="tel:+380961111111">
               <svg class="contact-icon" width="16px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -64,28 +66,34 @@
         <div class="container">
           <!-- Навігація для портфорліо -->
           <h2 class="visually-hidden">Панель навигации для портфолио</h2>
-          <ul class="list navi-portfolio">
-            <li class="navi-portfolio-btn">
-              <button class="navi-port-btn" type="button">Все</button>
+          <ul class="list card-navigation">
+            <li class="card-navigation--btn-margin">
+              <button class="card-navigation__btn" type="button">Все</button>
             </li>
-            <li class="navi-portfolio-btn">
-              <button class="navi-port-btn" type="button">Веб-сайты</button>
+            <li class="card-navigation--btn-margin">
+              <button class="card-navigation__btn" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="navi-portfolio-btn">
-              <button class="navi-port-btn" type="button">Приложения</button>
+            <li class="card-navigation--btn-margin">
+              <button class="card-navigation__btn" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="navi-portfolio-btn">
-              <button class="navi-port-btn" type="button">Дизайн</button>
+            <li class="card-navigation--btn-margin">
+              <button class="card-navigation__btn" type="button">Дизайн</button>
             </li>
-            <li class="navi-portfolio-btn">
-              <button class="navi-port-btn" type="button">Маркетинг</button>
+            <li class="card-navigation--btn-margin">
+              <button class="card-navigation__btn" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Список проектів -->
           <h2 class="visually-hidden">Проекты</h2>
           <ul class="list flexbox">
             <li class="portfolio-card content-card--3-items">
-              <div class="img-overlay">
+              <div class="overlay__img">
                 <img
                   src="./images/portfolio/port-1.jpg"
                   alt="Веб-сайт на екране ноутбука"
@@ -93,15 +101,15 @@
                   height="294"
                 />
                 <div class="overlay">
-                  <p class="text-overlay">
+                  <p class="overlay__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
               </div>
-              <div class="port-name">
-                <h3 class="portfolio-title">Технокряк</h3>
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">Технокряк</h3>
                 <p>Веб-сайт</p>
               </div>
             </li>
@@ -112,8 +120,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h3>
                 <p>Дизайн</p>
@@ -126,8 +134,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Ресторан <span lang="en">Seafood</span>
                 </h3>
                 <p>Приложение</p>
@@ -140,8 +148,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Проект <span lang="en">Prime</span>
                 </h3>
                 <p>Маркетинг</p>
@@ -154,8 +162,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Проект <span lang="en">Boxes</span>
                 </h3>
                 <p>Приложение</p>
@@ -168,8 +176,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title" lang="en">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title" lang="en">
                   Inspiration has no Borders
                 </h3>
                 <p>Веб-сайт</p>
@@ -182,8 +190,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Издание <span lang="en">Limited Edition</span>
                 </h3>
                 <p>Дизайн</p>
@@ -196,8 +204,8 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title">
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title">
                   Проект <span lang="en">LAB</span>
                 </h3>
                 <p>Маркетинг</p>
@@ -210,8 +218,10 @@
                 width="370"
                 height="294"
               />
-              <div class="port-name">
-                <h3 class="portfolio-title" lang="en">Growing Business</h3>
+              <div class="portfolio-card__content">
+                <h3 class="portfolio-card__title" lang="en">
+                  Growing Business
+                </h3>
                 <p>Приложение</p>
               </div>
             </li>

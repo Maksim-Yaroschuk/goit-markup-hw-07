@@ -375,11 +375,11 @@ img {
   fill: currentColor;
 }
 
-.email-form {
+.footer__form {
   margin-top: 20px;
 }
 
-.email-form .btn:after {
+.email-form__btn:after {
   content: "";
   display: inline-block;
   width: 24px;
@@ -391,20 +391,22 @@ img {
   margin-left: 10px;
 }
 
-.email-form-field {
+.footer__form-field {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.email-form__field {
   width: 358px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
-  margin-right: 10px;
 }
 
 /* .email-form-field:focus-within {
@@ -463,10 +465,6 @@ img {
 }
 
 .footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
   color: var(--logo-light-col);
   margin-top: 12px;
   margin-bottom: 0;
@@ -474,17 +472,17 @@ img {
 
 /* Стилі для сторінки портфоліо */
 
-.navi-portfolio {
+.card-navigation {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 }
 
-.navi-portfolio-btn:not(:last-child) {
+.card-navigation--btn-margin:not(:last-child) {
   margin-right: 8px;
 }
 
-.navi-port-btn {
+.card-navigation__btn {
   background-color: var(--bg-second);
   font-family: var(--main-font);
   font-weight: 500;
@@ -501,8 +499,8 @@ img {
     box-shadow var(--link-animation);
 }
 
-.navi-port-btn:hover,
-.navi-port-btn:focus {
+.card-navigation__btn:hover,
+.card-navigation__btn:focus {
   background-color: var(--accent-col);
   color: var(--logo-light-col);
   border-color: var(--accent-col);
@@ -527,7 +525,7 @@ img {
   cursor: pointer;
 }
 
-.img-overlay {
+.overlay__img {
   position: relative;
   overflow: hidden;
 }
@@ -548,20 +546,20 @@ img {
   transform: translateY(0);
 }
 
-.text-overlay {
+.overlay__text {
   font-size: 18px;
   line-height: 1.56;
   color: var(--logo-light-col);
 }
 
-.port-name {
+.portfolio-card__content {
   border: 1px solid var(--portcard-border-col);
   border-top: none;
   max-width: 370px;
   padding: 20px 24px;
 }
 
-.portfolio-title {
+.portfolio-card__title {
   font-weight: 700;
   color: var(--title-text-col);
   font-size: 18px;
@@ -605,7 +603,7 @@ img {
   padding: 40px;
 }
 
-.modal-form-lable {
+.contact-form__lable {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -613,7 +611,7 @@ img {
   margin-bottom: 4px;
 }
 
-.modal-btn-close {
+.modal__btn-close {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -628,7 +626,7 @@ img {
   top: 8px;
 }
 
-.modal-title {
+.modal__title {
   color: var(--title-text-col);
   font-weight: 700;
   font-size: 20px;
@@ -637,7 +635,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.modal-btn-close:hover {
+.modal__btn-close:hover {
   fill: var(--accent-col);
   cursor: pointer;
 }
@@ -647,7 +645,7 @@ img {
   margin-right: auto;
 } */
 
-.contact-form-field {
+.contact-form__field {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -656,32 +654,32 @@ img {
   border-radius: 4px;
 }
 
-.contact-form-field:focus-within {
+.contact-form__field:focus-within {
   border-color: var(--accent-col);
 }
 
-.contact-form-field:focus-within + .form-construction-icon {
+.contact-form__field:focus-within + .contact-form__icon {
   fill: var(--accent-col);
 }
 
-.contact-form-message {
+.contact-form__message {
   height: 120px;
   resize: none;
   padding: 12px 16px;
   vertical-align: top;
 }
 
-.form-construction {
+.contact-form__construction {
   position: relative;
 }
 
-.form-construction-icon {
+.contact-form__icon {
   position: absolute;
   top: 11px;
   left: 12px;
 }
 
-.modal-submit-block {
+.contact-form__submit-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -694,11 +692,11 @@ img {
   margin-top: 30px;
 } */
 
-.checkbox-label {
+.checkbox__label {
   cursor: pointer;
 }
 
-.checkbox-label::before {
+.checkbox__label::before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -708,7 +706,7 @@ img {
   vertical-align: text-top;
 }
 
-.checkbox:checked + .checkbox-label::before {
+.checkbox:checked + .checkbox__label::before {
   background-image: url(../images/checked.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -717,10 +715,10 @@ img {
   border-color: var(--accent-col);
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--accent-col);
 }
 
-.modal__submit-btn {
+.contact-form__submit-btn {
   margin-top: 30px;
 }
