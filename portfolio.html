@@ -28,10 +28,10 @@
           >
           <ul class="list main-menu">
             <li class="main-menu__item">
-              <a class="link current-page" href="./index.html">Студия</a>
+              <a class="link" href="./index.html">Студия</a>
             </li>
             <li class="main-menu__item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+              <a class="link current-page" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="main-menu__item">
               <a class="link" href="">Контакты</a>
@@ -110,7 +110,7 @@
               </div>
               <div class="portfolio-card__content">
                 <h3 class="portfolio-card__title">Технокряк</h3>
-                <p>Веб-сайт</p>
+                <p class="portfolio-card__description">Веб-сайт</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -124,7 +124,7 @@
                 <h3 class="portfolio-card__title">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h3>
-                <p>Дизайн</p>
+                <p class="portfolio-card__description">Дизайн</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -138,7 +138,7 @@
                 <h3 class="portfolio-card__title">
                   Ресторан <span lang="en">Seafood</span>
                 </h3>
-                <p>Приложение</p>
+                <p class="portfolio-card__description">Приложение</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -152,7 +152,7 @@
                 <h3 class="portfolio-card__title">
                   Проект <span lang="en">Prime</span>
                 </h3>
-                <p>Маркетинг</p>
+                <p class="portfolio-card__description">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -166,7 +166,7 @@
                 <h3 class="portfolio-card__title">
                   Проект <span lang="en">Boxes</span>
                 </h3>
-                <p>Приложение</p>
+                <p class="portfolio-card__description">Приложение</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -180,7 +180,7 @@
                 <h3 class="portfolio-card__title" lang="en">
                   Inspiration has no Borders
                 </h3>
-                <p>Веб-сайт</p>
+                <p class="portfolio-card__description">Веб-сайт</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -194,7 +194,7 @@
                 <h3 class="portfolio-card__title">
                   Издание <span lang="en">Limited Edition</span>
                 </h3>
-                <p>Дизайн</p>
+                <p class="portfolio-card__description">Дизайн</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -208,7 +208,7 @@
                 <h3 class="portfolio-card__title">
                   Проект <span lang="en">LAB</span>
                 </h3>
-                <p>Маркетинг</p>
+                <p class="portfolio-card__description">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio-card content-card--3-items">
@@ -222,7 +222,7 @@
                 <h3 class="portfolio-card__title" lang="en">
                   Growing Business
                 </h3>
-                <p>Приложение</p>
+                <p class="portfolio-card__description">Приложение</p>
               </div>
             </li>
           </ul>
@@ -236,7 +236,7 @@
           <!-- Адреса -->
           <li class="footer__blocks">
             <a class="logo" href="./index.html" lang="en"
-              ><span class="logo-second">Web</span>Studio</a
+              ><span class="logo--second-color">Web</span>Studio</a
             >
             <address class="footer__address">
               г. Киев, пр-т Леси Украинки, 26
@@ -254,14 +254,12 @@
           </li>
           <!-- Посилання на соціальні мережі -->
           <li class="footer__blocks">
-            <p class="our-qualities__title title title--uppercase">
-              Присоединяйтесь
-            </p>
-            <ul class="social-icons list">
+            <p class="footer__title title title--uppercase">Присоединяйтесь</p>
+            <ul class="social-icons footer__social-icons list">
               <li class="social-icons__item">
                 <a
                   href=""
-                  class="social-icons__link"
+                  class="social-icons__link footer__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -273,7 +271,7 @@
               <li class="social-icons__item">
                 <a
                   href=""
-                  class="social-icons__link"
+                  class="social-icons__link footer__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -285,7 +283,7 @@
               <li class="social-icons__item">
                 <a
                   href=""
-                  class="social-icons__link"
+                  class="social-icons__link footer__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -297,7 +295,7 @@
               <li class="social-icons__item">
                 <a
                   href=""
-                  class="social-icons__link"
+                  class="social-icons__link footer__socials-link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -310,17 +308,19 @@
           </li>
           <!-- Форма підписки на новини сайту -->
           <li class="footer__blocks">
-            <p class="our-qualities__title title title--uppercase">
+            <p class="footer__title title title--uppercase">
               Подпишитесь на рассылку
             </p>
-            <form class="email-form">
+            <form class="footer__form email-form">
               <input
                 type="email"
                 name="user-email"
-                class="email-form-field"
+                class="footer__form-field email-form__field"
                 placeholder="E-mail"
               />
-              <button type="submit" class="btn">Подписаться</button>
+              <button type="submit" class="btn email-form__btn">
+                Подписаться
+              </button>
             </form>
           </li>
         </ul>
