@@ -90,9 +90,9 @@ img {
   list-style: none;
 }
 
-.paragraph {
+/* .our-qualities__content {
   margin-top: 10px;
-}
+} */
 
 .header {
   color: var(--logo-dark-col);
@@ -102,46 +102,15 @@ img {
   padding-bottom: 25px;
 }
 
-.header .container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navi-main {
+.header__nav {
   display: flex;
   align-items: center;
-}
-
-.navi {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-col);
-  display: inline-flex;
-}
-
-.navi-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.logo {
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 93px;
-}
-
-.logo-second {
-  color: var(--accent-col);
-}
-
-.contact-info {
-  color: var(--main-text-col);
 }
 
 .current-page {
@@ -162,14 +131,45 @@ img {
   position: absolute;
 }
 
-.contact-icon {
-  margin-right: 10px;
-  fill: currentColor;
+.main-menu {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-col);
+  display: inline-flex;
 }
 
-.contact-link {
+.main-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 93px;
+}
+
+.logo--second-color {
+  color: var(--accent-col);
+}
+
+.contacts {
+  color: var(--main-text-col);
+}
+
+.contacts__item {
   display: flex;
   align-items: flex-end;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .hero {
@@ -181,13 +181,13 @@ img {
   text-align: center;
 }
 
-.hero-container {
+.hero__container {
   max-width: 696px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -222,30 +222,31 @@ img {
   margin-left: calc(-1 * var(--margin-card));
 }
 
+.content-card--4-items {
+  flex-basis: calc(100% / 4 - var(--margin-card));
+  margin-top: var(--margin-card);
+  margin-left: var(--margin-card);
+}
+
 .our-qualities {
   padding-top: 94px;
 }
 
-.qua-svg-block {
+.our-qualities__svg-block {
   display: flex;
   padding: 25px 0;
   justify-content: center;
   background-color: var(--bg-second);
 }
 
-.qua-title {
+.our-qualities__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-col);
   margin-top: 30px;
-}
-
-.content-card {
-  flex-basis: calc(100% / 4 - var(--margin-card));
-  margin-top: var(--margin-card);
-  margin-left: var(--margin-card);
+  margin-bottom: 10px;
 }
 
 .section {
@@ -253,7 +254,7 @@ img {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -266,15 +267,23 @@ img {
   position: relative;
 }
 
-.thumb .qua-title {
-  text-align: center;
+.thumb__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--logo-light-col);
+  text-align: center;
+
   padding: 27px 0;
   margin-top: 0;
+  margin-bottom: 0;
 
   background: rgba(47, 48, 58, 0.8);
   width: 100%;
+}
 
+.thumb .thumb__title {
   position: absolute;
   bottom: 0;
 }
@@ -285,11 +294,11 @@ img {
   padding: 0 32px;
 }
 
-.social-icons-item:not(:last-child) {
+.social-icons__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icons-link {
+.social-icons__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,19 +310,19 @@ img {
   transition: background-color var(--link-animation), fill var(--link-animation);
 }
 
-.social-icons-link:hover,
-.social-icons-link:focus {
+.social-icons__link:hover,
+.social-icons__link:focus {
   background-color: var(--accent-col);
   fill: var(--logo-light-col);
 }
 
-.port-card-flex {
+.content-card--3-items {
   flex-basis: calc(100% / 3 - var(--margin-card));
   margin-top: var(--margin-card);
   margin-left: var(--margin-card);
 }
 
-.team-bg {
+.section--grey-bg {
   background-color: var(--bg-second);
 }
 
@@ -326,14 +335,15 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-title {
+.team-card__title {
   font-weight: 500;
   color: var(--title-text-col);
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
 }
 
-.card-name {
+.team-card__name {
   max-width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -344,11 +354,11 @@ img {
   display: inline-flex;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,8 +370,8 @@ img {
   transition: border-color var(--link-animation), fill var(--link-animation);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-col);
   fill: currentColor;
 }
@@ -412,50 +422,55 @@ img {
   margin-right: 0;
 }
 
-.footer-address {
+.footer__address {
   font-style: normal;
   margin-top: 20px;
 }
 
-.footer-contacts {
+.footer__contacts {
   color: var(--footer-text-col);
   margin-top: 9px;
 }
 
-.footer-flex {
+.footer--flex {
   display: flex;
 }
 
-.footer-blocks:not(:last-child) {
+.footer__blocks:not(:last-child) {
   margin-right: 70px;
 }
 
-/* .footer-blocks {
+/* .footer__blocks {
   margin-right: 70px;
 } */
 
-.footer-blocks:last-child {
+.footer__blocks:last-child {
   margin-left: 23px;
 }
 
-.footer-blocks .social-icons {
+.footer__blocks .social-icons {
   padding: 0;
   margin-top: 20px;
 }
 
-.footer-blocks .social-icons-link {
+.footer__blocks .social-icons__link {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--logo-light-col);
 }
 
-.footer-blocks .social-icons-link:hover,
-.footer-blocks .social-icons-link:focus {
+.footer__blocks .social-icons__link:hover,
+.footer__blocks .social-icons__link:focus {
   background: var(--accent-col);
 }
 
-.footer .qua-title {
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--logo-light-col);
   margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 /* Стилі для сторінки портфоліо */
