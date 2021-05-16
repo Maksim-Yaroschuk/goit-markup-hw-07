@@ -239,11 +239,14 @@ img {
   background-color: var(--bg-second);
 }
 
-.our-qualities__title {
+.title--uppercase {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.our-qualities__title {
   color: var(--title-text-col);
   margin-top: 30px;
   margin-bottom: 10px;
@@ -268,10 +271,6 @@ img {
 }
 
 .thumb__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
   color: var(--logo-light-col);
   text-align: center;
 
@@ -448,18 +447,18 @@ img {
   margin-left: 23px;
 }
 
-.footer__blocks .social-icons {
+.footer__social-icons {
   padding: 0;
   margin-top: 20px;
 }
 
-.footer__blocks .social-icons__link {
+.footer__socials-link {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--logo-light-col);
 }
 
-.footer__blocks .social-icons__link:hover,
-.footer__blocks .social-icons__link:focus {
+.footer__socials-link:hover,
+.footer__socials-link:focus {
   background: var(--accent-col);
 }
 
@@ -470,7 +469,7 @@ img {
   text-transform: uppercase;
   color: var(--logo-light-col);
   margin-top: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 /* Стилі для сторінки портфоліо */
