@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Блок основної навігації по сайту -->
+      <div class="container">
+        <nav class="navi-main">
+          <a class="logo" href="./index.html" lang="en"
+            ><span class="logo-second">Web</span>Studio</a
+          >
+          <ul class="list navi">
+            <li class="navi-item">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="navi-item">
+              <a class="link current-page" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navi-item"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Контактна інофрмація -->
+        <ul class="list contact-info navi">
+          <li class="navi-item">
+            <a class="link contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="navi-item">
+            <a class="link contact-link" href="tel:+380961111111">
+              <svg class="contact-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Портфолио</h1>
+      <section class="section">
+        <div class="container">
+          <!-- Навігація для портфорліо -->
+          <h2 class="visually-hidden">Панель навигации для портфолио</h2>
+          <ul class="list navi-portfolio">
+            <li class="navi-portfolio-btn">
+              <button class="navi-port-btn" type="button">Все</button>
+            </li>
+            <li class="navi-portfolio-btn">
+              <button class="navi-port-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="navi-portfolio-btn">
+              <button class="navi-port-btn" type="button">Приложения</button>
+            </li>
+            <li class="navi-portfolio-btn">
+              <button class="navi-port-btn" type="button">Дизайн</button>
+            </li>
+            <li class="navi-portfolio-btn">
+              <button class="navi-port-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Список проектів -->
+          <h2 class="visually-hidden">Проекты</h2>
+          <ul class="list flexbox">
+            <li class="portfolio-card port-card-flex">
+              <div class="img-overlay">
+                <img
+                  src="./images/portfolio/port-1.jpg"
+                  alt="Веб-сайт на екране ноутбука"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p class="text-overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+              </div>
+              <div class="port-name">
+                <h3 class="portfolio-title">Технокряк</h3>
+                <p>Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-2.jpg"
+                alt="Баскетболисты"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-3.jpg"
+                alt="Лого ресторана морской кухни"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Ресторан <span lang="en">Seafood</span>
+                </h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-4.jpg"
+                alt="Наушники"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Проект <span lang="en">Prime</span>
+                </h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-5.jpg"
+                alt="Коробки"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Проект <span lang="en">Boxes</span>
+                </h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-6.jpg"
+                alt="Веб-сайт на мониторе"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title" lang="en">
+                  Inspiration has no Borders
+                </h3>
+                <p>Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-7.jpg"
+                alt="Открыта книга"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Издание <span lang="en">Limited Edition</span>
+                </h3>
+                <p>Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-8.jpg"
+                alt="Бирка"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title">
+                  Проект <span lang="en">LAB</span>
+                </h3>
+                <p>Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-card port-card-flex">
+              <img
+                src="./images/portfolio/port-9.jpg"
+                alt="Ноутбук"
+                width="370"
+                height="294"
+              />
+              <div class="port-name">
+                <h3 class="portfolio-title" lang="en">Growing Business</h3>
+                <p>Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="list footer-flex">
+          <!-- Адреса -->
+          <li class="footer-blocks">
+            <a class="logo" href="./index.html" lang="en"
+              ><span class="logo-second">Web</span>Studio</a
+            >
+            <address class="footer-address">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <ul class="list">
+              <li class="footer-contacts">
+                <a class="link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts">
+                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Посилання на соціальні мережі -->
+          <li class="footer-blocks">
+            <p class="qua-title">Присоединяйтесь</p>
+            <ul class="social-icons list">
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons-item">
+                <a
+                  href=""
+                  class="social-icons-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icons-svg" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Форма підписки на новини сайту -->
+          <li class="footer-blocks">
+            <p class="qua-title">Подпишитесь на рассылку</p>
+            <form class="email-form">
+              <input
+                type="email"
+                name="user-email"
+                class="email-form-field"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="btn">Подписаться</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
