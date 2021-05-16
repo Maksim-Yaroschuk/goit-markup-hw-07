@@ -1,0 +1,29 @@
+.main-menu {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-col);
+  display: inline-flex;
+}
+
+.main-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current-page {
+  position: relative;
+  color: var(--accent-col);
+  pointer-events: none;
+}
+
+.current-page:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 29px;
+  background-color: var(--accent-col);
+  border-color: var(--accent-col);
+  position: absolute;
+}

@@ -1,0 +1,13 @@
+.contacts {
+  color: var(--main-text-col);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
