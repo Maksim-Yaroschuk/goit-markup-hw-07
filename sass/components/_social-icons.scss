@@ -18,10 +18,11 @@
   background-color: var(--logo-light-col);
   fill: var(--svg-col);
   transition: background-color var(--link-animation), fill var(--link-animation);
-}
 
-.social-icons__link:hover,
-.social-icons__link:focus {
+
+&:hover,
+&:focus {
   background-color: var(--accent-col);
   fill: var(--logo-light-col);
+}
 }

@@ -65,8 +65,7 @@ img {
   transition: color var(--link-animation);
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   color: var(--accent-col);
 }
 
@@ -228,8 +227,7 @@ img {
   transition: background-color var(--link-animation), fill var(--link-animation);
 }
 
-.social-icons__link:hover,
-.social-icons__link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   background-color: var(--accent-col);
   fill: var(--logo-light-col);
 }
@@ -282,8 +280,7 @@ img {
   transition: border-color var(--link-animation), background-color var(--link-animation), color var(--link-animation), box-shadow var(--link-animation);
 }
 
-.card-navigation__btn:hover,
-.card-navigation__btn:focus {
+.card-navigation__btn:hover, .card-navigation__btn:focus {
   background-color: var(--accent-col);
   color: var(--logo-light-col);
   border-color: var(--accent-col);
@@ -333,10 +330,6 @@ img {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -349,6 +342,10 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--link-animation);
   padding: 40px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal__btn-close {
@@ -365,6 +362,11 @@ img {
   top: 8px;
 }
 
+.modal__btn-close:hover {
+  fill: var(--accent-col);
+  cursor: pointer;
+}
+
 .modal__title {
   color: var(--title-text-col);
   font-weight: 700;
@@ -372,11 +374,6 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.modal__btn-close:hover {
-  fill: var(--accent-col);
-  cursor: pointer;
 }
 
 .contact-form__lable {
@@ -580,8 +577,7 @@ img {
   transition: border-color var(--link-animation), fill var(--link-animation);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-col);
   fill: currentColor;
 }
@@ -653,8 +649,7 @@ img {
   fill: var(--logo-light-col);
 }
 
-.footer__socials-link:hover,
-.footer__socials-link:focus {
+.footer__socials-link:hover, .footer__socials-link:focus {
   background: var(--accent-col);
 }
 

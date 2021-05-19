@@ -34,11 +34,12 @@
 .footer__socials-link {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--logo-light-col);
-}
 
-.footer__socials-link:hover,
-.footer__socials-link:focus {
+
+&:hover,
+&:focus {
   background: var(--accent-col);
+}
 }
 
 .footer__title {

@@ -13,16 +13,15 @@
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.contact-form__field:focus-within {
-  border-color: var(--accent-col);
-}
+  &:focus-within {
+    border-color: var(--accent-col);
+  }
 
-.contact-form__field:focus-within + .contact-form__icon {
-  fill: var(--accent-col);
+  &:focus-within + .contact-form__icon {
+    fill: var(--accent-col);
+  }
 }
-
 .contact-form__message {
   height: 120px;
   resize: none;
@@ -49,16 +48,16 @@
 
 .checkbox__label {
   cursor: pointer;
-}
 
-.checkbox__label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--title-text-col);
-  border-radius: 2px;
-  vertical-align: text-top;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--title-text-col);
+    border-radius: 2px;
+    vertical-align: text-top;
+  }
 }
 
 .checkbox:checked + .checkbox__label::before {

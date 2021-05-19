@@ -16,10 +16,10 @@
   border-radius: 4px;
   fill: var(--svg-col);
   transition: border-color var(--link-animation), fill var(--link-animation);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--accent-col);
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-col);
+    fill: currentColor;
+  }
 }
