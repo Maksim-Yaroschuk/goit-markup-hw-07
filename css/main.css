@@ -118,9 +118,6 @@ img {
 }
 
 .main-menu {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--title-text-col);
   display: inline-flex;
   margin-left: 93px;
@@ -150,9 +147,15 @@ img {
 
 .contacts {
   color: var(--main-text-col);
+  display: inline-flex;
+  margin-left: 93px;
 }
 
-.contacts__item {
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
   display: flex;
   align-items: flex-end;
 }
@@ -457,6 +460,9 @@ img {
 }
 
 .header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--logo-dark-col);
   background-color: var(--logo-light-col);
   border-bottom: 1px solid var(--header-border-col);
