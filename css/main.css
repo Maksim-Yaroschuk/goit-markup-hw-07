@@ -296,7 +296,7 @@ img {
   top: 0;
   left: 0;
   padding: 64px 24px;
-  transform: translateY(101%);
+  transform: translateY(102%);
   transition: transform var(--link-animation);
 }
 
