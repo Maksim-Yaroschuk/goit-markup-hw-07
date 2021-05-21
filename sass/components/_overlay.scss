@@ -1,9 +1,4 @@
-.overlay__img {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay {
+.overlay__block {
   background-color: var(--accent-col);
   position: absolute;
   top: 0;
@@ -11,12 +6,17 @@
   padding: 64px 24px;
   transform: translateY(101%);
   transition: transform var(--link-animation);
+
+  .overlay:hover &,
+  .overlay:focus & {
+    opacity: 90%;
+    transform: translateY(0);
+  }
 }
 
-.portfolio-card:hover .overlay,
-.portfolio-card:focus .overlay {
-  opacity: 90%;
-  transform: translateY(0);
+.overlay__img {
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay__text {
